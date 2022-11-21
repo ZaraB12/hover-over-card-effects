@@ -7,6 +7,7 @@ public class CommonFunctions {
 
     Actions action = new Actions(Driver.getDriver());
 
+    // static wait
     public void waitFor(int seconds){
         try {
             Thread.sleep(seconds * 1000L);
@@ -15,6 +16,7 @@ public class CommonFunctions {
         }
     }
 
+    // hover over element
     public void hoverOver(WebElement element){
         action.moveToElement(element).build().perform();
         waitFor(2);
