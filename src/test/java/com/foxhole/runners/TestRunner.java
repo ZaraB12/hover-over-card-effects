@@ -10,8 +10,7 @@ import org.junit.runner.RunWith;
       features =  "src/test/resources/features",
         glue = "com/foxhole/step_definitions",
         dryRun = false,
-        tags = "@foxhole",
-        publish = true
+        tags = "@foxhole"
 )
 public class TestRunner {
 
