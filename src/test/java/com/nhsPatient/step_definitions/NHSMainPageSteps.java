@@ -1,12 +1,12 @@
-package com.foxhole.step_definitions;
+package com.nhsPatient.step_definitions;
 
-import com.foxhole.pages.FoxHoleQAPage;
+import com.nhsPatient.pages.NHSMainPage;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-public class FoxHoleQASteps {
+public class NHSMainPageSteps {
 
-    FoxHoleQAPage foxHoleQAPage = new FoxHoleQAPage();
+    NHSMainPage foxHoleQAPage = new NHSMainPage();
     @Given("user navigates to FoxHole Homepage")
     public void user_navigates_to_fox_hole_homepage() {
         foxHoleQAPage.navigateToHomePage();
@@ -37,16 +37,16 @@ public class FoxHoleQASteps {
     }
     @Then("user hovers over the cards and validates effects")
     public void user_hovers_over_the_cards_and_validates_effects() {
-        Assert.assertEquals(FoxHoleQAPage.expectedCardEffectColor,
+        Assert.assertEquals(NHSMainPage.expectedCardEffectColor,
                 foxHoleQAPage.validateHoverOverCardAccessibilityEffects());
-        Assert.assertEquals(FoxHoleQAPage.expectedCardEffectColor,
+        Assert.assertEquals(NHSMainPage.expectedCardEffectColor,
                 foxHoleQAPage.validateHoverOverCardBackEndTestingEffects());
-        Assert.assertEquals(FoxHoleQAPage.expectedCardEffectColor,
+        Assert.assertEquals(NHSMainPage.expectedCardEffectColor,
                 foxHoleQAPage.validateHoverOverCardAutomationEffects());
     }
     @And("user validates show more button color")
     public void userValidatesShowMoreButtonValue(){
-        Assert.assertEquals("Css Value Does Not Match", FoxHoleQAPage.expectedShowMoreButtonColor,
+        Assert.assertEquals("Css Value Does Not Match", NHSMainPage.expectedShowMoreButtonColor,
                 foxHoleQAPage.validateShowMoreButton());
     }
 

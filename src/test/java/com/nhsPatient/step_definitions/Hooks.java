@@ -1,7 +1,7 @@
-package com.foxhole.step_definitions;
+package com.nhsPatient.step_definitions;
 
 
-import com.foxhole.utilities.Driver;
+import com.nhsPatient.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -9,7 +9,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 

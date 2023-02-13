@@ -1,8 +1,8 @@
-package com.foxhole.pages;
+package com.nhsPatient.pages;
 
-import com.foxhole.utilities.CommonFunctions;
-import com.foxhole.utilities.ConfigurationReader;
-import com.foxhole.utilities.Driver;
+import com.nhsPatient.utilities.CommonFunctions;
+import com.nhsPatient.utilities.ConfigurationReader;
+import com.nhsPatient.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 
-public class FoxHoleQAPage extends CommonFunctions{
+public class NHSMainPage extends CommonFunctions{
 
     boolean flag = false;
 
@@ -38,7 +38,7 @@ public class FoxHoleQAPage extends CommonFunctions{
     public void navigateToHomePage(){
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
-    public FoxHoleQAPage() {
+    public NHSMainPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
